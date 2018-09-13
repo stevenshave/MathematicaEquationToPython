@@ -36,7 +36,7 @@ with open(args.inFile) as file:
     inFileLines=file.readlines()
 
 big_mathematica_output = "".join(inFileLines)
-big_mathematica_output=big_mathematica_output.replace("\n","").replace(" ","").replace('Power', 'np.power').replace('Sqrt', 'np.sqrt')
+big_mathematica_output=big_mathematica_output.replace("\n","").replace(" ","").replace('Power', 'np.power').replace('Sqrt', 'np.sqrt').replace('\t','')
 
 if(big_mathematica_output[0:5]=='List('):
     equation_begin_pos=0
