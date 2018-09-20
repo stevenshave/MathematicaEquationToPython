@@ -40,9 +40,9 @@ https://github.com/stevenshave/MathematicaEquationToPython
 
 __license__ = "MIT"
 import numpy as np
-def eqtn0(a,kdax,x):
+def eqtn0(a,x,kdax):
 	return (a+kdax+x-np.lib.scimath.sqrt(-4*a*x+np.power(a+kdax+x,2)))/(2.*x)
-def eqtn1(a,kdax,x):
+def eqtn1(a,x,kdax):
 	return (a+kdax+x+np.lib.scimath.sqrt(-4*a*x+np.power(a+kdax+x,2)))/(2.*x)
 ```
 
